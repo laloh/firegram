@@ -6,6 +6,7 @@ import Modal from './comps/Modal';
 import { useState } from 'react';
 
 function App() {
+
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (

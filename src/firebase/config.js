@@ -2,14 +2,17 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
+console.log(process.env);
+console.log(process.env.REACT_APP_APP_ID);
 
+// TODO: Send this credentials to env variables :) 
 var firebaseConfig = {
-	apiKey: "AIzaSyAfUHMsCVd7RgjxhzwavX5Ie-H1Ev7twhM",
-	authDomain: "firegram-6fe3a.firebaseapp.com",
-	projectId: "firegram-6fe3a",
-	storageBucket: "firegram-6fe3a.appspot.com",
-	messagingSenderId: "902204815579",
-	appId: "1:902204815579:web:01bb3c17e8ada0ca5074fe"
+	apiKey: process.env.REACT_APP_API_KEY,
+	authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+	projectId: process.env.REACT_APP_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_APP_ID
   };
   
 // Initialize Firebase
