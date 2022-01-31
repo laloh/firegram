@@ -9,6 +9,7 @@
     "dotenv": "^15.0.0",
     "firebase": "^7.16.1",
     "framer-motion": "^4.1.17",
+    "prettier": "^2.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"src/**/*.js\""
   },
   "eslintConfig": {
     "extends": "react-app"
