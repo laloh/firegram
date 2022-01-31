@@ -2,9 +2,6 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
-console.log(process.env);
-console.log(process.env.REACT_APP_APP_ID);
-
 // TODO: Send this credentials to env variables :) 
 var firebaseConfig = {
 	apiKey: process.env.REACT_APP_API_KEY,
